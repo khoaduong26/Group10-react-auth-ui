@@ -1,0 +1,126 @@
+.edit-profile {
+  min-height: 100vh;
+  padding: 64px 24px 96px;
+  color: #101113;
+  background: radial-gradient(circle at top, #f5f1ff, #fef7ef 45%, #f8fbff);
+}
+
+.edit-profile__hero {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 32px;
+  max-width: 1120px;
+  margin: 0 auto 40px;
+}
+
+.edit-profile__hero .ant-typography {
+  margin-bottom: 0;
+}
+
+.edit-profile__hero-card {
+  background: #101113;
+  color: #fff;
+  padding: 16px 20px;
+  border-radius: 16px;
+  min-width: 220px;
+  box-shadow: 0 20px 40px rgba(16, 17, 19, 0.2);
+}
+
+.edit-profile__grid {
+  max-width: 1120px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: minmax(240px, 1fr) minmax(320px, 2fr);
+  gap: 28px;
+}
+
+.eyebrow {
+  text-transform: uppercase;
+  font-size: 12px;
+  letter-spacing: 2.4px;
+  font-weight: 600;
+  color: #f45d22;
+}
+
+.profile-card {
+  border-radius: 24px;
+  border: none;
+  background: #ffffff;
+  box-shadow: 0 24px 60px rgba(30, 35, 68, 0.08);
+}
+
+.profile-card__avatar {
+  width: 140px;
+  height: 140px;
+  margin: 0 auto 16px;
+  border-radius: 24px;
+  overflow: hidden;
+  box-shadow: 0 18px 30px rgba(16, 17, 19, 0.12);
+}
+
+.profile-card__avatar img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.profile-card__meta {
+  display: grid;
+  gap: 12px;
+  margin-top: 24px;
+  font-size: 14px;
+}
+
+.profile-card__meta .label {
+  display: block;
+  text-transform: uppercase;
+  font-size: 11px;
+  letter-spacing: 1.4px;
+  color: #8c8c8c;
+  margin-bottom: 6px;
+}
+
+.profile-form {
+  border-radius: 24px;
+  border: none;
+  background: rgba(255, 255, 255, 0.95);
+  box-shadow: 0 24px 60px rgba(30, 35, 68, 0.08);
+}
+
+.profile-form .ant-card-head {
+  border-bottom: none;
+  padding-bottom: 0;
+}
+
+.profile-form .ant-form-item {
+  margin-bottom: 18px;
+}
+
+.profile-form__actions {
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+  gap: 12px;
+}
+
+.profile-form__actions .ant-btn-primary {
+  background: #f45d22;
+  border-color: #f45d22;
+  box-shadow: none;
+}
+
+.profile-form__actions .ant-btn-primary:hover {
+  background: #ff763e;
+  border-color: #ff763e;
+}
+
+@media (max-width: 900px) {
+  .edit-profile__hero {
+    flex-direction: column;
+  }
+
+  .edit-profile__grid {
+    grid-template-columns: 1fr;
+  }
+}

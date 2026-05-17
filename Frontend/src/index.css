@@ -1,0 +1,35 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:wght@400;600;700&family=Space+Grotesk:wght@400;500;600&display=swap');
+
+:root {
+  font-family: 'Space Grotesk', 'Segoe UI', sans-serif;
+  background-color: #f8fbff;
+  color: #101113;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: 'Fraunces', 'Georgia', serif;
+}
+
+#root {
+  min-height: 100vh;
+}
+
+.ant-typography {
+  font-family: inherit;
+}
+
+.ant-card {
+  font-family: inherit;
+}
